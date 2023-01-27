@@ -1,0 +1,64 @@
+<meta charset="UTF-8">
+<script>
+
+    document.write("<h4>Ana, Pau y Sofia viven juntas en la misma familia</h4>")
+    
+    
+    anho = 2022
+
+    
+    
+    var Ana_anho = (anho - 1993);
+    document.write("Ana tiene: " + (Ana_anho) + "años");
+    document.write("<br>");
+
+
+    
+    var Pao_anho = (anho - 1997);
+
+    document.write("Pao tiene: " + (anho-1997) + "años");
+    document.write("<br>");
+
+  
+  
+    var Sofia_anho = (anho - 2003);
+
+    document.write("Sofia tiene: " + (anho-2007) + "años");
+    document.write("<br>");
+    document.write("<br>");
+
+    
+    //Vamos a calcular el promedio de las 3 que viven en la misma familia
+
+    var promedio = (Ana_anho + Pao_anho + Sofia_anho)/3
+ 
+    document.write("El promedio de las 3 es: " + (promedio));
+    document.write("<br>");
+
+    /*
+        La función "Math.round("n")" nos servirá para redondear cualquier
+        décimal que tengamos. 
+    */
+
+    document.write("Redondeando es igual a: " + Math.round(promedio));
+
+
+    /*
+        Es posible crear distintos tipos de variables, cómo para nombres,
+        como también para diversas acciones. 
+    */
+
+    var NombreA = "Ana"
+    var NombreB = "Pao"
+    var NombreC = "Sofia"
+
+    var SaltoLinea = "<br><br><br>"
+
+    //Escribimos nuestro mensaje con las variables ya creadas
+
+    document.write(SaltoLinea);
+    document.write("Cuando " + NombreA + ", " + NombreB + " y " NombreC + "se reúnen:");
+    document.write(SaltoLinea);
+    document.write("Las 3 juegan videojuegos.");
+    
+</script>
