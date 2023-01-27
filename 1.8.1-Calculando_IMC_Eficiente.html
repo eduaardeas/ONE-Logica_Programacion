@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<h1>Programa 2: Calculando IMC de Juan y Jhon</h1>
+
+<script>
+    /*
+        Supongamos que queremos calcular el IMC de una persona, 
+        para calcular el IMC necesitamos IMC = peso/(altura*altura)
+    */
+
+    function imprimir(mostrar)
+    {
+        document.write(mostrar);
+        document.write("<br>");
+    }
+
+    //Esta función nos permitirá hacer más eficiente nuestro código. 
+    function calcularIMC(peso, altura, nombre)
+    {
+        imc = peso / (altura * altura);
+        imprimir("El IMC calculado de " + nombre + " es " + imc);
+
+    }
+
+    //Calcular el IMC de Jhon y Juan
+
+    calcularIMC(78, 1.78, "Jhon");
+    calcularIMC(86, 1.76, "Juan");
+
+</script>
