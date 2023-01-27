@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+
+<h3>Programa:Tablas de multiplicar</h3>
+<br>
+<script>
+    
+    function imprimir(escribir)
+    {
+        document.write(escribir);
+        document.write("<br>");
+    }
+
+    var multiplicando = parseInt(prompt("Ingrese el número Multiplicando: "));
+
+
+    /*
+        FOR: 
+            Es utilizado para repetir una o más instrucciones en un determinado número de veces.
+
+            - Ejemplo: 
+                for (nicializacón; condición; actualización)
+                {
+                    // sentencias a ejecutar en cada iteración. 
+                }
+
+                en donde: 
+                    (Paréntesis)   = Definir cómo deseamos que se realicen las repeticiones
+                    Inicialización = Ejecutará solamante al comenzar la primera parte de la iteración del bucle
+                    Condición      = Evaluará cada vez que comience un bucle
+                    Actualización  = indicará los cambios que queramos ejecutar en las variables cada vez que termina la iteración del bucle
+    */
+
+    for (var multiplicador = parseInt(prompt("Ingrese el número multiplicador: ")); multiplicador <= 25; multiplicador = multiplicador + 1)
+    {
+        imprimir("- Su " + multiplicando + "x" + multiplicador + " es: " + (multiplicando * multiplicador));
+
+    }
+
+</script>

@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<h3>Programa: mundial del FIFA</h3>
+<br>
+<script>
+    
+    function imprimir(escribir)
+    {
+        document.write(escribir);
+        document.write("<br>");
+    }
+
+    var anhoMundial = 1930;
+    var limite = parseInt(prompt("Ingrese el año FIFA"));
+
+    while(anhoMundial <= limite){
+        imprimir("Hubo mundial FIFA en: " + anhoMundial);
+        anhoMundial = anhoMundial + 4;
+    }
+
+    imprimir("<h1>fin</h1>");
+
+ </script>

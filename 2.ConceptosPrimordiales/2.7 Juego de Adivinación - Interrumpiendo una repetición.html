@@ -1,0 +1,52 @@
+<meta charset="UTF-8">
+
+<h3>Programa: Juego de Adivinación</h3>
+<br>
+<script>
+    
+    function imprimir(escribir)
+    {
+        document.write(escribir);
+        document.write("<br>");
+    }
+
+    var nPensado = Math.round(Math.random()*10);
+    var nLanzado = parseInt(prompt("Ingrese un número entre el 0-10: "));
+    var intentos = 3;
+    var contador = 1;
+
+    while (contador <= intentos) 
+    {
+        var nLanzado = parseInt(prompt("Ingrese un número entre el 0-10: "));
+
+        if (nPensado == nLanzado)
+        {
+            alert("Usted ha acertado en el intento " + intentos + (", el número pensado era: " + nPensado));
+            break;
+        }
+
+        else
+        {
+            alert("Used erró")
+
+        }
+
+
+        contador++;
+    }
+
+    if (nPensado == nLanzado)
+        {
+            alert("Usted ha acertado en el intento " + intentos + (", el número pensado era: " + nPensado));
+            
+        }
+
+        else
+        {
+            alert("Used erró, el número pensado era: " + nPensado);
+
+        }
+    
+    imprimir ("fin");
+
+</script>

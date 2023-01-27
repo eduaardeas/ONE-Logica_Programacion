@@ -1,0 +1,49 @@
+<meta charset="UTF-8">
+
+<h3>Programa: Juego de Adivinación</h3>
+<br>
+<script>
+    var aleatorio = Math.round(Math.random()*10);
+    var nLanzado = parseInt(prompt("Ingrese un número entre el 0-10: "));
+
+
+    function imprimir(escribir)
+    {
+        document.write(escribir);
+        document.write("<br>");
+    }
+
+    if (nLanzado > 10)
+    {
+        alert("Debe escoger un número entre el 0-10");
+    }
+    
+    if (aleatorio == nLanzado)
+    {
+        imprimir("Usted acertó! :D");
+    }
+
+    /*
+    if (aleatorio != nLanzado)
+    {
+        imprimir("No ha acertado el número, el número pensado era: " + aleatorio);
+    }
+    */
+
+    /*
+        ELSE:
+            Nos permite ejecutar el código alternativo 
+            en caso de no cumplirse la condición especulada. 
+            
+            Para ejecutar la condición, necesitamos: 
+
+                else
+                {
+
+                }
+    */
+    else 
+    {
+        imprimir("No ha acertado el número, el número pensado era: " + aleatorio);
+    }
+ </script>

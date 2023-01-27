@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<h3>Programa: Calcular puntos de un equipo de FUTBOL</h3>
+
+<script>
+
+    // Primero crearemos las variables que estaremos utilizando para la creación de nuestro programa
+    var victorias = prompt("Porfavor, indiquenos la cantidad de victorias :D");
+    var empates = prompt("Informenos la cantidad de empates")
+
+    //parseInt nos permite convertir textos a números ENTEROS.
+    var numeroVict = parseInt(victorias);
+    var numeroEmpt = parseInt(empates);
+    
+    // Después crearemos las funciones necesarias para hacer más eficiente el código
+    function SaltarLinea2()
+    {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(mensaje)
+    {
+        document.write(mensaje);
+        SaltarLinea2();
+    }
+
+    //Escribimos nuestra lógica de programación:
+    PuntosTotal = numeroVict * 3 + numeroEmpt;
+
+    imprimir ("El total de puntos del equipo es: " + PuntosTotal);
+
+    imprimir("Este programa ha quedado bastante bien :D");
+    
+
+</script>
