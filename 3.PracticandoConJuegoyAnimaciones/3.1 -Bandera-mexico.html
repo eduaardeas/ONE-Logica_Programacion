@@ -1,0 +1,36 @@
+
+<!--
+    <canvas></canvas>
+        Nos crea un cuadro en blanco, como si fuera una pizarra. 
+        Este mismo, nos permite dibujar gráficos a través d esecuencias de comandos. 
+
+        Para que pueda funcionar la el parametro, tenemos que definirle una altura (height) y una anchura (width).
+-->
+<canvas width="650" height="230"></canvas>
+
+<h3>Programa 1. Bandera de México</h3>
+
+<script>
+    var pantalla = document.querySelector("canvas"); //.querySelector nos permite traer elementos de HTML a Js
+    var pincel = pantalla.getContext("2d"); //.getContext nos permite establecer el tipo de contenido en nuestra pizarra (canvas)
+
+// Bandera de MEXICO
+
+    // Color verde
+    pincel.fillStyle = "#006847"; //propiedad
+    pincel.fillRect(0,0, 216,230); //funcion
+
+    // Color blanco
+    pincel.fillStyle = "#f5f5f5"; //propiedad
+    pincel.fillRect(216,0, 216,230); //funciont
+    
+    // Color Rojo
+    pincel.fillStyle = "#ce1125"; //propiedad
+    pincel.fillRect(434,0, 216,230); //funcion
+
+    //ciruclo (simulando el águila).
+    pincel.fillStyle = "black"
+    pincel.beginPath();
+    pincel.arc(324, 115, 30, 0, 2*3.14);
+    pincel.fill();
+</script>

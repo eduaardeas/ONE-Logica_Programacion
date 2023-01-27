@@ -1,0 +1,21 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    //realizaremos una funcion que nos permita repetir una serie de figuras. 
+    function dibujoSquare(x, y, color)
+    {
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+
+        pincel.fillStyle = color;
+        pincel.fillRect(x,y,50,50);
+        pincel.strokeStyle = "black"; //definimos el color del margen
+        pincel.strokeRect(x,y,50,50); //definimos el tamaño del margen.
+    }
+
+    dibujoSquare(0,0,"green");
+    dibujoSquare(50,0,"green");
+    dibujoSquare(100,0,"green");
+    
+</script>

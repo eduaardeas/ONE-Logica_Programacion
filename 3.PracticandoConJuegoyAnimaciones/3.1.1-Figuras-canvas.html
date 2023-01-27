@@ -1,0 +1,64 @@
+
+<!--
+    <canvas></canvas>
+        Nos crea un cuadro en blanco, como si fuera una pizarra. 
+        Este mismo, nos permite dibujar gráficos a través d esecuencias de comandos. 
+
+        Para que pueda funcionar la el parametro, tenemos que definirle una altura (height) y una anchura (width).
+-->
+<canvas width="650" height="230"></canvas>
+
+<h3>Programa 1. Bandera de México</h3>
+
+<script>
+    var pantalla = document.querySelector("canvas"); //.querySelector nos permite traer elementos de HTML a Js
+    var pincel = pantalla.getContext("2d"); //.getContext nos permite establecer el tipo de contenido en nuestra pizarra (canvas)
+
+// Creando una bandera
+
+    // Color verde
+    pincel.fillStyle = "blue"; //propiedad
+    pincel.fillRect(0,0, 216,230); //funcion
+
+    // Color blanco
+    pincel.fillStyle = "grey"; //propiedad
+    pincel.fillRect(216,0, 216,230); //funciont
+    
+    // Color Rojo
+    pincel.fillStyle = "pink"; //propiedad
+    pincel.fillRect(430,0, 220,235); //funcion
+
+    //ciruclo (negro)
+    pincel.fillStyle = "black"
+    pincel.beginPath();
+    pincel.arc(325, 115, 30, 0, 2*3.14);
+    pincel.fill();
+
+    // Triangulo (amarillo)
+    pincel.fillStyle = "yellow";
+    pincel.beginPath();
+    pincel.moveTo(325,115);
+    pincel.lineTo(216,230);
+    pincel.lineTo(432,230);
+    pincel.fill();
+
+    //Cuadrado cafe
+    pincel.fillStyle = "brown";
+    pincel.fillRect(300, 165, 50, 50);
+
+    //medio círculo (blanco)
+    pincel.fillStyle = "black"
+    pincel.beginPath();
+    pincel.arc(325, 190, 25, 0, 2*3.1416);
+    pincel.stroke();
+
+    // rombo (rojo)
+    pincel.fillStyle = "red";
+    pincel.beginPath();
+    pincel.moveTo(325,165);
+    pincel.lineTo(300,190);
+    pincel.lineTo(350,190);
+    pincel.lineTo(325,215)
+    pincel.fill();
+
+</script>
